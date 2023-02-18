@@ -11,3 +11,42 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+:root
+{
+  /* primary color combination */
+  --front-color-base: 0, 0%;
+  --front-color-lightness: 20%;
+  --front-color: hsl(var(--front-color-base), var(--front-color-lightness));
+  --front-color-darker-shade: hsl(var(--front-color-base), calc(var(--front-color-lightness) - 30%));
+  --front-color-lighter-shade: hsl(var(--front-color-base), calc(var(--front-color-lightness) + 30%));
+  --back-color-base: 0, 0%;
+  --back-color-lightness: 80%;
+  --back-color: hsl(var(--back-color-base), var(--back-color-lightness));
+  --back-color-darker-shade: hsl(var(--back-color-base), calc(var(--back-color-lightness) - 30%));
+  --back-color-lighter-shade: hsl(var(--back-color-base), calc(var(--back-color-lightness) + 30%));
+
+  /* secondary color combination */
+  --accent-front-color-base: 0, 0%;
+  --accent-front-color-lightness: 80%;
+  --accent-front-color: hsl(var(--accent-front-color-base), var(--accent-front-color-lightness));
+  --accent-front-color-darker-shade: hsl(var(--accent-front-color-base), calc(var(--accent-front-color-lightness) - 30%));
+  --accent-front-color-lighter-shade: hsl(var(--accent-front-color-base), calc(var(--accent-front-color-lightness) + 30%));
+  --accent-back-color: 0, 0%;
+  --accent-back-color-lightness: 20%;
+  --accent-back-color: hsl(var(--accent-back-color), var(--accent-back-color-lightness));
+  --accent-back-color-darker-shade: hsl(var(--accent-back-color), calc(var(--accent-back-color-lightness) - 30%));
+  --accent-back-color-lighter-shade: hsl(var(--accent-back-color), calc(var(--accent-back-color-lightness) + 30%));
+
+  /* tertiary color combination */
+  --highlight-front-color-base: 180, 100%;
+  --highlight-front-color-lightness: 25%;
+  --highlight-front-color: hsl(var(--highlight-front-color-base), var(--highlight-front-color-lightness));
+  --highlight-front-color-darker-shade: hsl(var(--highlight-front-color-base), calc(var(--highlight-front-color-lightness) - 30%));
+  --highlight-front-color-lighter-shade: hsl(var(--highlight-front-color-base), calc(var(--highlight-front-color-lightness) + 30%));
+  --highlight-back-color-base: 0, 0%;
+  --highlight-back-color-lightness: 100%;
+  --highlight-back-color: hsl(var(--highlight-back-color-base), var(--highlight-back-color-lightness));
+  --highlight-back-color-darker-shade: hsl(var(--highlight-back-color-base), calc(var(--highlight-back-color-lightness) - 10%));
+  --highlight-back-color-lighter-shade: hsl(var(--highlight-back-color-base), calc(var(--highlight-back-color-lightness) + 10%));
+}
