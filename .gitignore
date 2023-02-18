@@ -102,6 +102,7 @@ dist
 
 # TernJS port file
 .tern-port
-/soluinet.web/.vs/soluinet.web/v17
+
+# Visual Studio specifics
 *.suo
-/.vs/soluinet.web/FileContentIndex
+/.vs/**/*
