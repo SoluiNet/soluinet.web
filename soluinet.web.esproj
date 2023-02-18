@@ -25,7 +25,6 @@
     <Folder Include="src\components\" />
     <Folder Include="src\core\" />
     <Folder Include="src\config\" />
-    <Folder Include="soluinet.web\" />
     <Folder Include="src\static\" />
   </ItemGroup>
   <!-- This target is copied from the ASP.NET SPA template in order to ensure node_modules are in place. -->
