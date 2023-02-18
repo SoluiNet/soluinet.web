@@ -104,3 +104,4 @@ dist
 .tern-port
 /soluinet.web/.vs/soluinet.web/v17
 *.suo
+/.vs/soluinet.web/FileContentIndex
