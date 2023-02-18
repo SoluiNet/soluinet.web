@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.VisualStudio.JavaScript.Sdk/0.4.0-alpha">
+﻿<Project Sdk="Microsoft.VisualStudio.JavaScript.Sdk/0.4.0-alpha">
   <PropertyGroup Label="Globals">
     <ProjectGuid>62904048-7273-4745-996c-2ee1f22e34e2</ProjectGuid>
   </PropertyGroup>
@@ -19,13 +19,14 @@
     <Script Remove=".gitignore" />
     <Script Remove="LICENSE" />
     <Script Remove="nuget.config" />
-    <Script Remove="README.md" />
     <Script Remove="soluinet.web.sln" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="components\" />
-    <Folder Include="core\" />
-    <Folder Include="config\" />
+    <Folder Include="src\components\" />
+    <Folder Include="src\core\" />
+    <Folder Include="src\config\" />
+    <Folder Include="soluinet.web\" />
+    <Folder Include="src\static\" />
   </ItemGroup>
   <!-- This target is copied from the ASP.NET SPA template in order to ensure node_modules are in place. -->
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
