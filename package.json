@@ -39,6 +39,7 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
+    "root": true,
     "env": {
       "browser": true,
       "es2021": true,
@@ -49,8 +50,8 @@
       "react-app/jest",
       "eslint:recommended",
       "plugin:react/recommended",
-      "plugin:@typescript-eslint/recommened",
-      "plugin:@eslint-plugin-jsdoc",
+      "plugin:@typescript-eslint/recommended",
+      "plugin:jsdoc/recommended-error",
       "prettier"
     ],
     "parser": "@typescript-eslint/parser",
@@ -69,7 +70,7 @@
     "plugins": [
       "react",
       "react-hooks",
-      "@eslint-plugin-jsdoc",
+      "jsdoc",
       "@typescript-eslint",
       "prettier"
     ],
@@ -77,7 +78,8 @@
       "semi": "error",
       "prefer-const": "error",
       "jsdoc/require-description": "error",
-      "jsdoc/check-values": "error"
+      "jsdoc/check-values": "error",
+      "jsdoc/require-jsdoc": "error"
     },
     "settings": {
       "import/resolver": {

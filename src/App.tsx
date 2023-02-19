@@ -2,6 +2,11 @@ import * as React from 'react';
 import logo from './logo.svg';
 import './App.scss';
 
+/**
+ * The application
+ * 
+ * @class
+ */
 function App() {
   return (
     <div className="App">
