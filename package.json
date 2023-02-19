@@ -8,9 +8,14 @@
     "@testing-library/user-event": "^13.5.0",
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
+    "@typescript-eslint/eslint-plugin": "^5.52.0",
     "axios": "^1.3.3",
     "eslint": "^8.34.0",
+    "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-jsdoc": "^40.0.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
     "i18next": "^22.4.10",
     "i18next-browser-languagedetector": "^7.0.1",
     "i18next-http-backend": "^2.1.1",
@@ -18,6 +23,7 @@
     "jslint": "^0.12.1",
     "lodash": "^4.17.21",
     "mitt": "^3.0.0",
+    "prettier": "^2.8.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-i18next": "^12.1.5",
@@ -33,30 +39,50 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
+    "env": {
+      "browser": true,
+      "es2021": true,
+      "jest": true
+    },
     "extends": [
       "react-app",
-      "react-app/jest"
+      "react-app/jest",
+      "eslint:recommended",
+      "plugin:react/recommended",
+      "plugin:@typescript-eslint/recommened",
+      "plugin:@eslint-plugin-jsdoc",
+      "prettier"
     ],
-    "files": [
-      "src/**/*.js",
-      "src/**/*.ts",
-      "src/**/*.tsx"
-    ],
-    "ignores": [
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+      "project": "./tsconfig.json",
+      "ecmaVersion": "latest",
+      "ecmaFeatures": {
+        "jsx": true
+      },
+      "sourceType": "module"
+    },
+    "ignorePatterns": [
       "**/*.config.js",
       "!**/eslint.config.js"
     ],
-    "languageOptions": {
-      "ecmaVersion": 5
-    },
-    "plugins": {
-      "jsdoc": "eslint-plugin-jsdoc"
-    },
+    "plugins": [
+      "react",
+      "react-hooks",
+      "@eslint-plugin-jsdoc",
+      "@typescript-eslint",
+      "prettier"
+    ],
     "rules": {
       "semi": "error",
       "prefer-const": "error",
       "jsdoc/require-description": "error",
       "jsdoc/check-values": "error"
+    },
+    "settings": {
+      "import/resolver": {
+        "typescript": {}
+      }
     }
   },
   "browserslist": {
