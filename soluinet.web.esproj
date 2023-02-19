@@ -20,7 +20,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="src\components\" />
-    <Folder Include="src\core\" />
     <Folder Include="src\config\" />
     <Folder Include="src\static\" />
   </ItemGroup>
