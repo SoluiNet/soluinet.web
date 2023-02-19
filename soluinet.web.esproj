@@ -16,9 +16,6 @@
     <Script Remove=".vs\**" />
   </ItemGroup>
   <ItemGroup>
-    <Script Remove=".gitignore" />
-    <Script Remove="LICENSE" />
-    <Script Remove="nuget.config" />
     <Script Remove="soluinet.web.sln" />
   </ItemGroup>
   <ItemGroup>
