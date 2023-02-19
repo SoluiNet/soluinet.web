@@ -10,10 +10,12 @@
     "@types/react-dom": "^18.0.11",
     "axios": "^1.3.3",
     "eslint": "^8.34.0",
+    "eslint-plugin-jsdoc": "^40.0.0",
     "i18next": "^22.4.10",
     "i18next-browser-languagedetector": "^7.0.1",
     "i18next-http-backend": "^2.1.1",
     "jsdoc": "^4.0.1",
+    "jslint": "^0.12.1",
     "lodash": "^4.17.21",
     "mitt": "^3.0.0",
     "react": "^18.2.0",
@@ -34,7 +36,28 @@
     "extends": [
       "react-app",
       "react-app/jest"
-    ]
+    ],
+    "files": [
+      "src/**/*.js",
+      "src/**/*.ts",
+      "src/**/*.tsx"
+    ],
+    "ignores": [
+      "**/*.config.js",
+      "!**/eslint.config.js"
+    ],
+    "languageOptions": {
+      "ecmaVersion": 5
+    },
+    "plugins": {
+      "jsdoc": "eslint-plugin-jsdoc"
+    },
+    "rules": {
+      "semi": "error",
+      "prefer-const": "error",
+      "jsdoc/require-description": "error",
+      "jsdoc/check-values": "error"
+    }
   },
   "browserslist": {
     "production": [

@@ -1,9 +1,9 @@
-import i18n from "i18next";
-import detector from "i18next-browser-languagedetector";
-import backend from "i18next-http-backend";
-import { initReactI18next } from "react-i18next";
-import { defaultNS } from "./i18n-namespace";
-import { resourcePath, resourcePathMissing } from "../../config/Config"
+import i18n from 'i18next';
+import detector from 'i18next-browser-languagedetector';
+import backend from 'i18next-http-backend';
+import { initReactI18next } from 'react-i18next';
+import { defaultNS } from './i18n-namespace';
+import { resourcePath, resourcePathMissing } from '../../config/Config'
 
 i18n
   .use(detector)
@@ -16,7 +16,7 @@ i18n
     },
     debug: false,
     defaultNS: defaultNS,
-    fallbackLng: "en", // use en if detected lng is not available
+    fallbackLng: 'en', // use en if detected lng is not available
     interpolation: {
       escapeValue: false // react already safes from xss
     },

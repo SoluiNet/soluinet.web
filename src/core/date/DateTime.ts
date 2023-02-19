@@ -7,14 +7,16 @@ export function formatDate(dateString: string)
 {
   const date = new Date(dateString);
 
-  const dateFormatter = new Intl.DateTimeFormat('default',
+  const dateFormatter = new Intl.DateTimeFormat(
+    'default',
     {
       year: 'numeric',
       month: '2-digit',
       day: '2-digit',
     });
 
-  const timeFormatter = new Intl.DateTimeFormat('default',
+  const timeFormatter = new Intl.DateTimeFormat(
+    'default',
     {
       hour: '2-digit',
       minute: '2-digit',
@@ -22,5 +24,5 @@ export function formatDate(dateString: string)
       hour12: false,
     });
 
-  return dateFormatter.format(date) + " " + timeFormatter.format(date);
+  return dateFormatter.format(date) + ' ' + timeFormatter.format(date);
 }

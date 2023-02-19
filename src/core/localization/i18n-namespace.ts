@@ -1,1 +1,1 @@
-export const defaultNS = "soluinet.web";
+export const defaultNS = 'soluinet.web';
